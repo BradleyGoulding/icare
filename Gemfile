@@ -7,7 +7,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '2.4.2'
+ruby '2.5.0'
 gem 'rails', '5.1.4'
 
 # Servers
@@ -38,7 +38,7 @@ gem 'validates_timeliness', '~> 4.0'
 gem 'validates_timeliness-mongoid', github: 'johnnyshields/validates_timeliness-mongoid'
 
 # Authentication framework
-gem 'devise', '~> 4.3'
+gem 'devise', '~> 4.4'
 
 # Geospatial data library
 # gem 'rgeo', '~> 0.6.0'
@@ -67,9 +67,9 @@ gem 'i18n-js', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'sprockets', '~> 3.7'
 gem 'sprockets-rails', '~> 3.2'
-gem 'turbolinks', '~> 5.0'
+gem 'turbolinks', '~> 5.1'
 gem 'twbs_sass_rails', '~> 4.7'
-gem 'uglifier', '~> 4.0'
+gem 'uglifier', '~> 4.1'
 
 group :development, :test do
   gem 'bullet', '~> 5.7'
@@ -80,7 +80,7 @@ group :development, :test do
   gem 'pry-byebug', '~> 3.5'
   gem 'pry-rails', '~> 0.3.6'
   gem 'rspec-rails', '~> 3.7'
-  gem 'rubocop', '~> 0.52.0', require: false
+  gem 'rubocop', '~> 0.52.1', require: false
   gem 'rubocop-rspec', '~> 1.21', require: false
   gem 'scss_lint', '~> 0.56.0', require: false
   gem 'slim_lint', '~> 0.15.1', require: false
@@ -98,7 +98,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 2.16'
+  gem 'capybara', '~> 2.17'
   gem 'capybara-screenshot', '~> 1.0'
   gem 'coveralls_reborn', '~> 0.10.0', require: false
   gem 'database_cleaner', '~> 1.6'
@@ -107,7 +107,7 @@ group :test do
   gem 'mongoid-rspec', github: 'mongoid-rspec/mongoid-rspec'
   gem 'poltergeist', '~> 1.17'
   gem 'simplecov', '~> 0.15.1', require: false
-  gem 'webmock', '~> 3.1', require: false
+  gem 'webmock', '~> 3.2', require: false
 end
 
 group :staging, :production do
